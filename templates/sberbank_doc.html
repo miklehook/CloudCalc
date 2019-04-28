@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>"Сбербанк"</title>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Didact+Gothic|Exo+2|Montserrat|Noto+Serif" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='sberbank.css') }}"href="sberbank.css">
+        
+        <link rel="shortcut icon" href="{{ url_for('static', filename="img/icon.png") }}" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header1">
+            
+        </header>
+        
+        <main>
+
+            <div class="mainphoto">
+                
+
+                <img src="{{ url_for('static', filename="img/main_fone_doc.jpg") }}" alt="font3" class="main_fone_doc">
+                <a href="sberbank_op.html"><img  src="{{ url_for('static', filename="img/logo.png") }}" alt="logo" class="logotype"></a>
+                <table class="block_white">
+                <tbody>
+                <tr >
+                <td><img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_2">
+                    <h1 class="zagol_2">1. Ознакомтесь с пакетом<br> необходимых документов </h1>
+                    <img src="{{ url_for('static', filename="img/macbook-pro.png") }}" alt="mac" class="mac"></td> 
+                <td><img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_3"> 
+                    <h2 class="zagol_3">2. Выберете отделение Сбербанка, в котором Вы бы хотели открыть счет </h2>
+                    <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55c99a1012e314d7a4a8798c9315b2b7fd38e05c889199d5b1b111b2488abaa8&amp;width=500&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script></div>
+      
+                </td>   
+                <td><img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_4">
+                    
+                    <h3 class="zagol_4">3. Загрузите необходимые документы </h3>
+                    
+                       
+                        <p class="load_doc"><input class='load'type="file" name="f" multiple="multiple">
+                            
+                            <a href="sberbank_doc.html" class="button_load">Отправить</a>
+                       </p>
+                       
+                </td>    
+                    </tr>  
+                    </tbody>
+                </table>
+                
+                
+                <div class="block_white_mob">
+                <table >
+                <tbody>
+                <tr class="mob_block"><img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_mob">
+                    
+                    <h1 class="zagol_mob">1. Ознакомтесь с пакетом<br> необходимых документов </h1>
+                    
+                    <img src="{{ url_for('static', filename="img/macbook-pro.png") }}" alt="mac" class="mac_mob">
+                </tr>
+                <tr class="mob_block" >
+                <img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_mob"> 
+                    
+                    <h2 class="zagol_mob">2. Выберете отделение Сбербанка,<br> в котором Вы бы хотели открыть счет </h2>
+                    <div class="map_mob"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55c99a1012e314d7a4a8798c9315b2b7fd38e05c889199d5b1b111b2488abaa8&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script></div>
+      
+                </tr>
+                <tr class="mob_block">
+                <img src="{{ url_for('static', filename="img/white.jpg") }}" alt="white" class="white_mob_3">
+                    
+                    <h3 class="zagol_mob_3">3. Загрузите необходимые документы </h3>
+                    
+                       
+                        <p class="load_doc"><input class='load'type="file" name="f" multiple="multiple">
+                            
+                            <a href="sberbank_doc.html" class="button_load_mob">Отправить</a>
+                       </p>
+      
+                    </tr>  
+                    </tbody>
+                </table>
+                </div>
+                
+                <img src="{{ url_for('static', filename="img/grey.jpg") }}" alt="white" class="grey_doc">
+                
+
+
+ 
+
+
+
+
+            </div>
+            
+      
+
+
+            
+
+        </main>
+    </body>
+
+
+</html>
