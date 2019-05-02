@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
+from application import models
 
 app = Flask(__name__)
 app.debug=True
@@ -11,8 +12,13 @@ def sberbank_op():
 @app.route('/sberbank_reg.html')
 def sberbank_reg():
 	return render_template('sberbank_reg.html')
-@app.route('/sberbank_doc.html')
+@app.route('/sberbank_doc.html',method=['POST'])
 def sberbank_doc():
-	return render_template('sberbank_doc.html')
+    
+    inn = request.form['inn']
+    
+    #post = Data(inn = inn)
+    
+    return '<h1> INN{}</>'.format(inn)
 if __name__ == '__main__':
 	app.run(host='0.0.0.0')
