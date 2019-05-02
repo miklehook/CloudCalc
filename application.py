@@ -9,16 +9,18 @@ app.secret_key = 'cC1YCIWOj9GgWspgNEo2'
 @app.route('/sberbank_op.html')
 def sberbank_op():
 	return render_template('sberbank_op.html')
-@app.route('/sberbank_reg.html')
+@app.route('/sberbank_reg.html',method=['POST'])
 def sberbank_reg():
-	return render_template('sberbank_reg.html')
-@app.route('/sberbank_doc.html',method=['POST'])
+    inn = request.form['inn']
+    return '<h1> INN{}</>'.format(inn)
+
+@app.route('/sberbank_doc.html')
 def sberbank_doc():
     
-    inn = request.form['inn']
+    
     
     #post = Data(inn = inn)
     
-    return '<h1> INN{}</>'.format(inn)
+    return render_template('sberbank_doc.html')
 if __name__ == '__main__':
 	app.run(host='0.0.0.0')
