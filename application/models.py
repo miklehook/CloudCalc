@@ -9,6 +9,8 @@ class Data(db.Model):
     email = db.Column(db.String(255), unique=False, nullable=True)
     pasport = db.Column(db.Integer, unique=False, nullable=False)
 
+    def __init__(self, inn):
+        self.inn = inn
     def __repr__(self):
         return '<Data %r>' % self.inn
 
